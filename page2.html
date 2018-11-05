@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pag2</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/mediaq.css">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- ==========TOP- HEADER============ -->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- <div class="col-md-12">
+				<div class="top-header">
+					<ul id="navbar">
+						<li><a href="">Contact</a></li>
+						<li><a href="">Home</a></li>
+					</ul>	
+					<span><i id="caret" class="fa fa-caret-down caret1"></i></span>
+				</div>
+			</div> -->
+			<!-- ================Header================ -->
+			<div class="col-md-12">
+				<div class="header">
+					<!-- <a href="#"><i class="fa fa-arrow-left"></i> Go Back</a> -->
+					<h1 class="type"></h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<!-- ================Wrapper================ -->
+				<div class="main-wrapper">
+					<div class="col-md-3 col-sm-12 col-xs-12 col-lg-3 ">
+						<!-- ================SideBar 1================ -->
+						<div class="sidebar-1">
+							<div class="sidebar-1-Title">
+								<h3>Total Count</h3>
+							</div>
+							<!--=============== Dynamic Content ===========-->
+							<h2>10,000</h2>
+						</div>	
+						<!-- ================SideBar 2================ -->
+						<div class="sidebar-2">
+							<h1>Optimise</h1>
+							<hr>
+							<div class="industry form-group">
+								<label for="industryBox">Industry</label><br>
+								<input  class="form-control input-sm" type="text" id="industryBox">
+							</div>
+							<div class="revenue form-group">
+								<label for="revenueBox">Revenue</label><br>
+								<input class="form-control input-sm" type="text" id="revenueBox">
+							</div>
+							<div class="location form-group">
+								<label for="locationBox">Location</label><br>
+								<input class="form-control input-sm" type="text" id="locationBox">
+							</div>
+							<div class="employees form-group">
+								<label for="employeesBox">Employees</label><br>
+								<input class="form-control input-sm" type="text" id="employeesBox">
+							</div>
+							<div class="button">
+								<button id="create" class="btn btn-primary">Create Dashboard</button><button style="margin-left:10px" class="btn btn-danger" id="reset">Reset</button>
+							</div>
+						</div>	
+					</div>
+					<!-- ================Top -Conent================ -->
+					<div class="col-md-3">
+						<div class="top-content">
+								<!-- <div class="count">
+									<h3>Total Count</h3><small>10,000</small>
+								</div>				
+								<div class="downloadWrapper">
+									<button id="download" class="btn btn-success">Download PDF</button>
+								</div>	 -->					
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="top-content">
+								<!-- <div class="count">
+									<h3>Total Count</h3><small>10,000</small>
+								</div>				
+								<div class="downloadWrapper">
+									<button id="download" class="btn btn-success">Download PDF</button>
+								</div>	 -->					
+						</div>
+					</div>
+					<div class="col-md-2">
+							<div class="down">
+								<button id="download" class="btn btn-danger">Download PDF</button>
+							</div>
+					</div>					
+					<!-- ================Content================ -->
+					<div class="col-md-9 col-lg-9 col-xs-12 col-sm-12">
+						<div class="content">
+							<div class="industry-content">
+								<h2>Industry</h2>
+								<hr>
+								<button id="edit" class="btn btn-link">Edit</button>
+  								<div id="chartdiv2"></div>	
+  								<hr>
+							</div>
+							<div class="revenue-content">
+								<h2>Revenue</h2>
+								<hr>
+								<button id="edit2" class="btn btn-link">Edit</button><br><br>
+  								<div id="chartdiv4"></div>
+							</div>
+							<div class="location-content">
+								<h2>Location</h2>
+								<hr>
+  								<div id="chartdiv"></div> 
+  							</div>
+  							<div class="employees-content"> 
+								<h2>Employees</h2>
+								<hr>
+								<button id="edit4" class="btn btn-link">Edit</button><br><br>
+  								<div id="chartdiv3"></div>
+  							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer">
+					<div>All Copyrights &copy Reserved</div>
+					<div>Designed And Developed By Thanveer Shah</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="editWrapper">
+		<div class="edit-1">
+			<h2 align="center">Industry</h2>
+			<button id="close" class="close closeMe">X</button>
+			2009:<input type="number" class="form-control" id="box1" name=""><br>
+			2010:<input type="number" class="form-control" id="box2" name=""><br>
+			2011:<input type="number" class="form-control" id="box3" name=""><br>
+			2012:<input type="number" class="form-control" id="box4" name=""><br>
+			2013:<input type="number" class="form-control" id="box5" name=""><br>
+			<button id="btn-industry" class="btn btn-primary">Search</button>
+		</div>
+	</div>
+	<div class="editWrapper-2">
+		<div class="edit-2">
+			<h2 align="center">Revenue</h2>
+			<button id="close2" class="close">X</button>
+			2005:<input type="number" class="form-control" id="box6" name=""><br>
+			2006:<input type="number" class="form-control" id="box7" name=""><br>
+			2007:<input type="number" class="form-control" id="box8" name=""><br>
+			2008:<input type="number" class="form-control" id="box9" name=""><br>
+			2009:<input type="number" class="form-control" id="box10" name=""><br>
+			<button id="btn-revenue" class="btn btn-primary">Search</button>
+		</div>
+	</div>
+	<div class="editWrapper-3">
+		<div class="edit-3">
+			<h2 align="center">Employees</h2>
+			<button id="close3" class="close">X</button>
+			USA:<input type="number" class="form-control" id="box11" name=""><br>
+			China:<input type="number" class="form-control" id="box12" name=""><br>
+			Japan:<input type="number" class="form-control" id="box13" name=""><br>
+			Germany:<input type="number" class="form-control" id="box14" name=""><br>
+			India:<input type="number" class="form-control" id="box15" name=""><br>
+			<button id="btn-employees" class="btn btn-primary">Search</button>
+		</div>
+	</div>
+
+<script src="assets/js/TweenLite.min.js"></script>
+<script src="assets/js/typed.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/javascript-all.js"></script>
+<script src="assets/js/test.js"></script>
+<script src="assets/js/test2.js"></script>
+<script src="assets/js/test3.js"></script>
+</body>
+</html>
